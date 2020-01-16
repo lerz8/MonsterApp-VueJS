@@ -6,8 +6,21 @@
     width: 80%;
     height: 40px;
     background-color: #eee;
-    margin: auto;
+    margin: 0;
+    color: white;
     transition: width 500ms;
+}
+
+.healthbar--success {
+    background-color: green;
+}
+
+.healthbar--warning {
+    background-color: orange;
+}
+
+.healthbar--danger {
+    background-color: red;
 }
 
 .controls, .log {

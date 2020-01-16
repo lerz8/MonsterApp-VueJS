@@ -27,7 +27,7 @@ new Vue({
         },
         heal: function() {
             this.playerHealth = this.calculateLife(this.randomNumber(1,20), this.playerHealth,'damage', true);
-            this.playerHealth = this.calculateLife(this.randomNumber(15,30), this.playerHealth,'heal', true);
+            if(this.playerHealth>0){this.playerHealth =  this.calculateLife(this.randomNumber(15,30), this.playerHealth,'heal', true);}
         },
         randomNumber: function(min, max) { 
             return Math.floor(Math.random() * ( Math.floor(max) - Math.ceil(min) + 1)) + Math.ceil(min);
